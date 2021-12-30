@@ -1,0 +1,25 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Nico",
+    "celular":"332211",
+    "direccion": "Kr 25"
+}
+
+###
+PATCH  http://localhost:9000/api/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Richi",
+    "celular":"789",
+    "direccion": "Kr 7"
+}
+
+###
+DELETE http://localhost:9000/api/2 HTTP/1.1
