@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../db');
+const { Model, DataTypes } = require('sequelize')
+const sequelize = require('../db')
 
 class Contact extends Model {}
 Contact.init({
@@ -12,6 +12,6 @@ Contact.init({
 }, {
     sequelize,
     modelName: "contacts"
-});
+})
 
-module.exports = Contact;
+module.exports = Contact

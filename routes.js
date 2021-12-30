@@ -1,6 +1,6 @@
-const express = require('express');
-const router = express.Router();
-const Contact = require('./database/models/Contact');
+const express = require('express')
+const router = express.Router()
+const Contact = require('./database/models/Contact')
 
 // INDEX /api
 router.get('/', (req, res) => {
@@ -52,6 +52,5 @@ router.delete('/:id', (req, res) => {
         res.json(result)
     })
 })
-
 
 module.exports = router
